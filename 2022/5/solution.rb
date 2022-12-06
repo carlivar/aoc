@@ -17,7 +17,6 @@ input = STDIN.read
       qty = $1
       from = $2
       to = $3
-      buf = []
       case part
       when 1
         qty.to_i.times { stacks[to.to_i].insert(0,stacks[from.to_i].shift) }
